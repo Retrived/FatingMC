@@ -1,0 +1,2 @@
+# MineHut
+A Minecraft Server
