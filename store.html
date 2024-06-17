@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="logo_small.png" alt="logo"></a>
+      <a href="store.html" class="desktop_navbar_link">Store</a>
+      <a href="vote.html" class="desktop_navbar_link scroll">Vote</a>
+      <a href="about.html" class="desktop_navbar_link scroll">About Us</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="https://discord.com/invite/TBrQYwSgYF" class="desktop_navbar_link2 scroll">Join Us!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="logo_small.png" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="store.html">Store</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="vote.html">Vote</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="about.html">About Us</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="https://discord.com/invite/TBrQYwSgYF">Join Us</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="store.html">
+          <img class="main1_logo" src="storehead.png" alt="logo">
+        </a>
+              <div id="about"></div>
+      <div class="main5">
+        <a class="headline">The FatingMC Store</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="emerald.jpg">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">Ranks</a>
+              <a class="main5_admins_description_title" href="https://example.com">Emerald</a>
+              <a class="main5_admins_description">Price- 0.71$/Month<br>This Rank Gives You Permission To Fly In Lobby And Give You Particles.</a>
+            </div>
+          </div>
+
+            <img class="main5_admins_img" alt="admin member img" src="legend.jpg">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">Ranks</a>
+              <a class="main5_admins_description_title" 
+              <a class="main5_admins_description_title" href="https://example.com">Legend</a>
+              <a class="main5_admins_description">Price- 1.19$/Month<br>This Ranks Give You Permission To Fly In Overworld, A Luxury Feel In Survival Also Lobby And A Better Kit In PvP Duels.</a>
+          <footer class="copyright_div">
+      <a href="https://discord.com/invite/TBrQYwSgYF" class="copyright">Copyright 2024 Fating MC</a>
+    </footer>
+  </body>
+</html>
